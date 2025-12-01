@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Basics</title>
+
+  <!-- 1. Connecting JS inside head -->
+  <script>
+    console.log("JS connected in head");
+  </script>
+
+  <!-- 2. Connecting external JS -->
+  <script src="script.js"></script>
+
+  <!-- 3. Connecting JS with async/defer -->
+  <script async src="asyncScript.js"></script>
+  <script defer src="deferScript.js"></script>
+</head>
+
+<body>
+  <h1>JS Lesson Tasks</h1>
+
+  <!-- 4. Connecting JS inside body -->
+  <script>
+    console.log("JS inside body");
+
+    // ============================
+    //     MINIMUM REQUIREMENTS
+    // ============================
+
+    // Variables for names & surnames:
+    let firstName = "John";
+    let lastName = "Dow";
+    let userFirstName = "Jane";
+    let userLastName = "Dow";
+
+    // Wrong variable names:
+    // let 1name = "John";
+    // let user-name = "Jonh";
+    // let let = "test";
+    // let ім'я = "John";
+    // let my variable = 101;
+
+    // Comments:
+    // Oneliner
+    // /* Multiline */
+
+    // Variables naming conventions:
+    // camelCase
+    // PascalCase
+    // snake_case
+    // UPPER_SNAKE_CASE
+
+
+    // ============================
+    //          NORMA REQUIREMENTS
+    // ============================
+
+    // 1. Greeting
+    const userName = prompt("What's your name?");
+    alert("Hi, " + userName + "!");
+
+    // 2. Age calculator
+    const currentYear = 2025;
+    const birthYear = prompt("Enter your birth year:");
+    const age = currentYear - birthYear;
+    alert("Your age: " + age);
+
+    // 3. Perimeter of a square
+    const side = prompt("Enter the side of the square:");
+    const perimeter = side * 4;
+    alert("Perimeter: " + perimeter);
+
+
+    // ============================
+    //        MAX REQUIREMENTS
+    // ============================
+
+    // 1. Circle area
+    const radius = prompt("Enter the radius:");
+    const circleArea = 3.14 * radius ** 2;
+    alert("Circle area: " + circleArea);
+
+    // 2. Швидкість для подолання відстані
+    const km = prompt("Provide the distance in km:");
+    const hours = prompt("Provide the time in hours:");
+    const speed = km / hours;
+    alert("Required speed: " + speed + " km/h");
+
+    // 3. Конвертор валют (USD → EUR)
+    const usdToEur = 0.90;
+    const usd = prompt("Enter the amount in USD:");
+    const eur = usd * usdToEur;
+    alert(usd + " USD = " + eur + " EUR");
+  </script>
+</body>
+
+</html>
